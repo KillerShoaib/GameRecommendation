@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Recommendation System</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}" />
+    <link rel="shortcut icon" type="image/png" href="{{url_for('static',filename='favicon.png')}}">
+    
+  </head>
+  <body>
+    <main class="background">
+      <section class="glass">
+        <div class="gameRecommendation">
+          <h1>Game Recomendation System</h1>
+        </div>
+        <div class="boxContainer">
+          <table class="elementsContainer">
+            <tr>
+              
+                <form action="/predict" method="POST" class="search" autocomplete="off">
+                  <td class = "autocomplete">
+                    
+                    <input type="text" name="name" id="myInput" required>
+                  </td>    
+                  <td>
+                    
+                    <input type="submit" value="Search" class="material-icons">
+                    
+                  </td>
+                </form>
+              
+              
+            </tr>
+         </table>
+        </div>
+      </section>
+    </main>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{{url_for('static',filename='autocomplete.js')}}"></script>
+    <script> 
+        $.getJSON("{{url_for('static',filename='name.json')}}",function(data){
+          autocomplete(document.getElementById("myInput"), data.Name);  // calling the autocomplete function
+        });    
+    </script>
+    
+    
+  </body>
+  
+</html>
+       

@@ -1,0 +1,324 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+h1{
+  position: relative;
+  color: #ff0000;
+  font-weight: 600;
+  font-size: 3rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+  background-color: rgba(0, 0, 0, 0.11);
+    
+}
+h2
+{
+  position: relative;
+  color: #d31919;
+  font-weight: 500;
+  font-size: 3rem;
+}
+  
+
+  
+.background{
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #424242;
+}
+
+/*this is a psuedo element which will only effect the image not the text*/
+.background::before
+{ content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  background-image: url("bg5.jpg");
+  background-repeat: repeat;
+  opacity: .9;
+  background-size: 1920px 1080px;
+
+}
+  
+  
+  
+.glass{
+    
+  min-height: 55vh;
+  width: 70%;
+  display: flex;
+    
+}
+
+
+.boxContainer
+{
+  margin: auto;
+  margin-top: 10%;
+  margin-left:7%;
+  position: absolute;
+  width: 750px;
+  height: 120px;
+  border: 2px solid #ff0000;
+  padding: 8px 10px;
+  border-radius: 50px;
+  text-align: center;
+}
+.elementsContainer{
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+  
+input[type=text]
+{
+  border: none;
+  height: 90%;
+  width: 90%;
+  padding: 5px 5px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-family: 'Trebuchet MS';
+  color:#424242;
+  font-weight: 500;
+}
+input[type=submit]
+{
+  border: none;
+  height: 70%;
+  width: 70%;
+  padding: 5px 5px;
+  border-radius: 30px;
+  font-size: 15px;
+  background-color: rgba(236, 228, 228, 0.877);
+}
+.autocomplete {
+/*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+  border: none;
+  height: 90%;
+  width: 90%;
+  padding: 5px 5px;
+  border-radius: 50px;
+}
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+  
+
+.gameRecommendation
+{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin-top: 0;
+      
+}
+.search :focus
+{
+  outline:none;
+}
+.metarial-icons
+{
+  font-size: 100px;
+  color: #2988b9;
+}
+  
+
+
+.gameRecommendation2
+{
+  position: relative;
+  text-align: center;
+    
+}
+
+.background2{
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color:rgba(0, 0, 0, 0.637);
+}
+
+.background2::before{ 
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  background-image: url("bg5.jpg");
+  background-repeat: repeat;
+  opacity: .8;
+  background-size: 1920px 1080px;
+}
+
+.boxContainer2
+{
+  margin: auto;
+  margin-top: 5%;
+  margin-left:5%;
+  margin-right: 5%;
+  position: absolute;
+  width: 550px;
+  height: 60px;
+  border: 2px solid #ff0000;
+  padding: 8px 10px;
+  border-radius: 50px;
+  text-align: center;
+      
+}
+.elementsContainer2{
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.cardcontainer
+{
+  margin: auto;
+  margin-top: 12%;
+  position: absolute;
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  /*background-color: #fff;*/
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 180px 180px 50px;
+  grid-template-areas: "image" "text" "stats";
+  /*background: rgba(0, 0, 0, 0.795);*/
+  /*box-shadow: 5px 5px 15px rgba(0,0,0,0.9);*/
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:30px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.705);
+}
+
+.card-text {
+  grid-area: text;
+}
+.card-stats {
+  grid-area: stats; 
+}
+
+.card-image {
+  grid-area: image;
+}
+img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.card-text {
+  grid-area: text;
+  margin: 10px;
+  overflow: auto;
+}
+.card-text .console {
+  color: rgba(12, 240, 210, 0.897);
+  font-size:18px;
+  margin: 2px;  
+}
+.card-text p {
+  color: rgba(218, 207, 207, 0.897);
+  font-size:18px;
+  font-weight: 300;
+  margin: 0px;   
+}
+.card-text h2 {
+  margin-top:0px;
+  font-size:28px;
+}
+
+.card-stats {
+  grid-area: stats; 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  background: rgba(91, 17, 211, 0.822);
+  margin-bottom: 3px;
+}
+
+.card-stats .stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding:5px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+
+.swiper-container {
+  margin: auto;
+  margin-top: 12%;
+  position: absolute;
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  background-position: center;
+  width:360px;
+  height: 510px;
+  background-size: cover;
+  margin-right: 50px;
+  background: rgba(0, 0, 0, 0.212);
+}
+  
+  
+  
+  
