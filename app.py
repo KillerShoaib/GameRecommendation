@@ -8,7 +8,7 @@ import gzip
 
 
 
-app = Flask(__name__)
+app = Flask(__name__,template_folder='Templates')
 
 # loading the dataset
 df = pd.read_csv("Final_game_dataset.csv")
