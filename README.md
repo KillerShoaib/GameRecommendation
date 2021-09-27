@@ -6,7 +6,7 @@ The details of the game was collected from the [**Rawg api.**](https://rawg.io/a
 You need to create an account and collect the api key to use the api.
 
 To get all the name of games from **2000-2021** I scrape the wikipedia
-table using ```beautifulsoup4``` and get the info of those game name from the api.
+table using ```beautifulsoup4``` and used those game name to get the info from the api.
 
 Live Demo : https://gamerecomendation.azurewebsites.net/
 ## Demo
