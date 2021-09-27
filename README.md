@@ -5,8 +5,7 @@ This is a game recommendation system based on machine learning that provides con
 The details of the game was collected from the [**Rawg api.**](https://rawg.io/apidocs)
 You need to create an account and collect the api key to use the api.
 
-To get all the name of games from **2000-2021** I scrape the wikipedia
-table using ```beautifulsoup4``` and used those game name to get the info from the api.
+I scraped the wikipedia table from **2000-2021** to collect the games name by using ```beautifulsoup4``` and used those game names to get the info from the api.
 
 Live Demo : https://gamerecomendation.azurewebsites.net/
 ## Demo
