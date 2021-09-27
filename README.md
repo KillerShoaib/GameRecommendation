@@ -1,8 +1,6 @@
 
 # Game Recommendation Using Python And Scikit-Learn
-This is a machine learning based game recommendation system.
-It is a content based recommendation. It uses **cosine
-similarity** to return the most similar game from the input.
+This is a game recommendation system based on machine learning that provides content based recommendation.
 
 The details of the game was collected from the [**Rawg api.**](https://rawg.io/apidocs)
 You need to create an account and collect the api key to use the api.
